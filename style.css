@@ -1,0 +1,19 @@
+* {
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper.active {
+    
+}
+
+.hidden{
+    transform: scale(0);
+}
