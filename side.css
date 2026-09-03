@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1{font-size: 30px;}
+/* h1,h4{position: fixed;} */
+
+.sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%; width: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 197, 67);
+    overflow-y: auto;  /* para malagyan ng scroll */
+}
+
+.side_list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: grid;
+    border-top: solid 1px;
+
+}
+
+.menu:hover{
+    background-color: aqua;
+}
+
+img {
+    height: 100px;
+
+}
+
+.main {
+    position: fixed;
+    top: 0; left: 20vh;
+    display: flex;
+    /* width: 70vh; */
+}
