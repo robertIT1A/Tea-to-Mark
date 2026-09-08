@@ -9,11 +9,12 @@ h1{font-size: 30px;}
 .sidebar {
     position: fixed;
     top: 0; left: 0;
-    height: 100%; width: 20vh;
+    height: 100%; width: 180px;
     display: flex;
     flex-direction: column;
     background-color: rgb(173, 197, 67);
     overflow-y: auto;  /* para malagyan ng scroll */
+    z-index: 10;
 }
 
 .side_list {
@@ -22,6 +23,7 @@ h1{font-size: 30px;}
     padding-bottom: 20px;
     align-items: center;
     justify-content: center;
+    list-style: none; /* remove bullet points */
 }
 .menu {
     text-decoration: none;
@@ -35,15 +37,45 @@ h1{font-size: 30px;}
 .menu:hover{
     background-color: aqua;
 }
-
+.side_icon{height: 100px;}
 img {
     height: 100px;
+    
 
 }
+
+
+/* .crop{
+    height: 200px;
+    background-color: red;
+} */
+
+
+.Buldok, .Pilay, .Chilog, .Pesto, .Linguine,.Tuna,.Penne,.Ramen{ 
+    height: 200px;
+    
+    }
+    .Afritado{height: 180px;}
+    .Tuna{height: 250px;}
+    .Linguine{width: 170px;}
+    .Buldok{height: 150px;}
 
 .main {
     position: fixed;
     top: 0; left: 20vh;
-    display: flex;
+    
+    /* align-items: center; */
     /* width: 70vh; */
+    height: 100vh;  /* need nito para mag scroll */
+    /* min-width: 100vh; */
+    overflow-y: auto;  /* to scroll */
+    padding: 24px;
+    flex-direction: column;
+    list-style: none; /* remove bullet points */
 }
+
+/* .bites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
