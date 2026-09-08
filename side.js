@@ -23,3 +23,44 @@ buttons.forEach((btn) =>{
 
     });
 });
+
+// mix.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     mix.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
+// couple_meal.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     couple_meal.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
+// couple_meal.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     couple_meal.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
+// solo_meal.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     solo_meal.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
+// hot.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     hot.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
+// iced.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     iced.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
+// tea.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     tea.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
+// bites.addEventListener('click', ()=>{
+//     defult.classList.remove('active');
+//     bites.classList.add('active');
+//     mix_menu.classList.add('active');
+// });
