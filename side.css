@@ -60,6 +60,21 @@ img {
     .Linguine{width: 170px;}
     .Buldok{height: 150px;}
 
+
+.food{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+.food.button{
+    width: 50px;
+}
+.top_info{
+    display: flex;
+    justify-content: space-around;
+    /* text-decoration: underline; */
+}
+
 .main {
     position: fixed;
     top: 0; left: 20vh;
@@ -79,3 +94,4 @@ img {
     justify-content: center;
     align-items: center;
 } */
+
