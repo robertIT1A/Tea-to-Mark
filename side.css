@@ -55,17 +55,27 @@ img {
     height: 200px;
     
     }
-    .Afritado{height: 180px;}
-    .Tuna{height: 250px;}
-    .Linguine{width: 170px;}
-    .Buldok{height: 150px;}
+    .Afritado{height: 200px;}
+    .Tuna{height: 200px;}
+    .Linguine{height: 200px;}
+    .Buldok{height: 200px;}
 
 
 .food{
     display: flex;
     flex-direction: column;
     width: 180px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 15px;
 }
+
+.food img{
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
 .food.button{
     width: 50px;
 }
@@ -73,6 +83,7 @@ img {
     display: flex;
     justify-content: space-around;
     /* text-decoration: underline; */
+    margin-top: 10px;
 }
 
 .main {
@@ -95,3 +106,29 @@ img {
     align-items: center;
 } */
 
+.descept{
+    font-size: 15px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price{
+    font-weight: 600;
+}
+
+.top_info button{
+    background-color: rgb(207, 136, 4);
+    border: none;
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+}
+
+.bites li{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
