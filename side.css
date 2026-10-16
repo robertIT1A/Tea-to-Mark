@@ -3,19 +3,45 @@
     margin: 0;
 }
 
+/* .main {min-height: 100vh;} */
+
 h1{font-size: 30px;}
 /* h1,h4{position: fixed;} */
 
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    height: 100vh; 
+}
+
 .sidebar {
-    position: fixed;
-    top: 0; left: 0;
-    height: 100%; width: 180px;
     display: flex;
     flex-direction: column;
     background-color: rgb(173, 197, 67);
-    overflow-y: auto;  /* para malagyan ng scroll */
-    z-index: 10;
+    overflow-y: auto;  
+    z-index: 10; 
 }
+
+.main {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;  
+    padding: 24px;
+    list-style: none; 
+}
+
+.info_sidebar {
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+
 
 .side_list {
     display: flex;
@@ -52,19 +78,19 @@ img {
 
 
 .Buldok, .Pilay, .Chilog, .Pesto, .Linguine,.Tuna,.Penne,.Ramen{ 
-    height: 200px;
+    height: 200px; width: 250px;
     
     }
-    .Afritado{height: 200px;}
-    .Tuna{height: 200px;}
-    .Linguine{height: 200px;}
-    .Buldok{height: 200px;}
+    .Afritado{height: 200px;width: 250px;}
+    .Tuna{height: 200px;width: 250px;}
+    .Linguine{height: 200px;width: 250px;}
+    .Buldok{height: 200px;width: 250px;}
 
 
 .food{
     display: flex;
     flex-direction: column;
-    width: 180px;
+    width: 250px;
     border: 1px solid;
     padding: 5px;
     border-radius: 15px;
@@ -86,25 +112,10 @@ img {
     margin-top: 10px;
 }
 
-.main {
-    position: fixed;
-    top: 0; left: 20vh;
-    
-    /* align-items: center; */
-    /* width: 70vh; */
-    height: 100vh;  /* need nito para mag scroll */
-    /* min-width: 100vh; */
-    overflow-y: auto;  /* to scroll */
-    padding: 24px;
-    flex-direction: column;
-    list-style: none; /* remove bullet points */
-}
 
-/* .bites {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.bites {
+    padding-bottom: 50px;
+}
 
 .descept{
     font-size: 15px;
@@ -127,8 +138,49 @@ img {
     color: white;
 }
 
+
 .bites li{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
 }
+
+
+
+/* info side bar */
+.order, .payment {
+    border: 1px solid; border-radius: 5px; padding: 5px; width: auto; background-color: yellowgreen;
+}
+
+.order{
+   /* display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; */
+   background-color: aqua;
+
+}
+
+.no_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    background-color: bisque;
+    margin:  0 15px 0 15px;
+    text-align: center;
+}
+ .bag{
+    height: 250px;
+ }
+
+ .order p, .payment p{font-size: 20px;}
+
+ .Checkout {
+    background-color: rgba(255, 217, 0, 0.966);
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+ }
