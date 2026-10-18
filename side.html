@@ -109,7 +109,7 @@
                   </p>
                   <div class="top_info">
                     <p class="price">₱60.00</p>
-                    <button>
+                    <button class="add-to-cart">
                       Add to Cart <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                   </div>
@@ -125,8 +125,8 @@
                     Spicy Korean noodles with egg and sausage.
                   </p>
                   <div class="top_info">
-                    <p class="price">₱60.00</p>
-                    <button>
+                    <p class="price">₱70.00</p>
+                    <button class="add-to-cart">
                       Add to Cart <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                   </div>
@@ -381,13 +381,14 @@
             <img class="bag" src="picture/noItem.png" alt="" />
             <h2>Your tray is feeling light!</h2>
             <p>Add some delicious meals to get started.</p>
+            <div id="receipt-items"></div>
           </div>
         </div>
         <div class="payment">
           <h2>Recept</h2>
-          <p>Subtotal:</p>
-          <p>Tax:</p>
-          <h1>Total:</h1>
+          <p>Subtotal: <span id="Subtotal">₱0.00</span></p>
+          <p>Tax: <span id="Tax">₱0.00</span></p>
+          <h1>Total: <span id="total">₱0.00</span></h1>
         </div>
         <button class="Checkout">Checkout</button>
       </aside>
