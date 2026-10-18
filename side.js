@@ -18,7 +18,7 @@ const startbtn = document.querySelector('.startbtn');
 // querySelectorAll para matarget lahat yung button
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
-// 2. Point to the new container for receipt items
+
 const receiptItemsContainer = document.getElementById("receipt-items");
 const Subtotal = document.getElementById("Subtotal");
 const Tax = document.getElementById("Tax");
@@ -28,35 +28,28 @@ const total = document.getElementById("total");
 let subAmount = 0;
 const taxRate = 0.12;
 
-// 3. Loop through all buttons
+
 addToCartButtons.forEach(button => {
     button.addEventListener("click", function(event) {
-        // Get the parent food container
         const foodDiv = this.closest(".food");
 
-        // Get Name and Price
         const foodName = foodDiv.querySelector(".title").textContent;
         const priceText = foodDiv.querySelector(".price").textContent;
 
-        // Convert "₱60.00" to the number 60
         const priceNumber = parseFloat(priceText.replace('₱', ''));
 
-        // Create the new item and add it to the receipt container
         const newItem = document.createElement("div");
         newItem.textContent = `${foodName}: ₱${priceNumber.toFixed(2)}`;
         receiptItemsContainer.appendChild(newItem);
 
-        // Math Calculations
         subAmount += priceNumber;
-        const taxAmount = subAmount * taxRate; // Fixed the missing * operator
+        const taxAmount = subAmount * taxRate; 
         const totalAmount = subAmount + taxAmount;
 
-        // Update the DOM elements
         Subtotal.textContent = `₱${subAmount.toFixed(2)}`;
         Tax.textContent = `₱${taxAmount.toFixed(2)}`;
         total.textContent = `₱${totalAmount.toFixed(2)}`;
-        
-        // Optional: Hide the "Your tray is feeling light!" message
+
         const noItemMessage = document.querySelector(".no_item");
         if(noItemMessage) {
             noItemMessage.style.display = "none";
